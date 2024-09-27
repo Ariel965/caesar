@@ -17,7 +17,7 @@ def caesar_cipher(text: str, shift: int):
     return result
 
 def ceaser_decipher(secret_message: str, shift: int):
-    pass
+    result = ""
 
     for char in secret_message:
         if char.islower():
@@ -34,4 +34,4 @@ def ceaser_decipher(secret_message: str, shift: int):
 hidden_message = caesar_cipher(secret_message, number)
 print(hidden_message)
 
-print(caesar_cipher(hidden_message, number))
+print(ceaser_decipher(hidden_message, number))
